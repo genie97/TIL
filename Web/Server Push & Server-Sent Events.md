@@ -94,8 +94,10 @@
    > - 필드명이 **retry**, 필드값이 **숫자**인 경우 :  reconnectiontime (ms)의 값으로 필드값을 <u>설정한다</u> (set)
    > - **필드명이 위의 네가지가 아닌 경우는 무시한다**
    >
+   > 
+   >
    > 공백 라인이 있는 경우 event, data, id 값들이 클라이언트의 onmessage 이벤트로 dispatch 된다
    >
    > - onmessage 이벤트로 dispatch 되면 관련 버퍼들은 모두 초기화 된다
-   > - evnet 필드가 존재하는 경우 해당 event 필드값과 동일한 이름의 이벤트를 실행한다		 	
+   > 	 evnet 필드가 존재하는 경우 해당 event 필드값과 동일한 이름의 이벤트를 실행한다		 	
 
