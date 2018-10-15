@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SSE</title>
+<script>
+	var eventSource;
+	function OnLoad() {
+		document.getElementById("startBtn").addEventListener(
+				"click",
+				function() {
+					//EventSource 생성 및 서버 호출
+					eventSource = new EventSource(
+							"http://localhost:8080/SSE/examServer.jsp");
+
+					//서버와의 연결이 open되면 호출됨
+					eventSource.onopen = function(event) {
+						doument.getElementById("state").innerHTML = "STARTED";
+					};
+					//서버에서 메시지가 도착하면 호출됨
+					eventSource.onmessage = function(event) {
+						document.getElementById("time").innerHTML = event.data;
+					};
+					//서버와의 연결이 끊기거나 오류가 발생하면 호출
+					eventSource.onerror = function(event) {
+						documen.getElementById("state").innerHTML = "ERROR";
+					};
+				});
+		document.getElemnentById("stopBtn").addEventListener("click",
+				function() {
+					if (evnetSource) {
+						eventSource.close(); //이벤트 스트림 연결 종료
+					}
+					document.getElementById("state").innerHTML = "STOP";
+				});
+	}
+</script>
+</head>
+<body id="body" onload="OnLoad()">
+	<p>
+		<span id="state">STATE</span> <span id="time"></span>
+	</p>
+	<p>
+		<input type="button" id="startBtn" value="시작" /> <input type="button"
+			id="stopBtn" value="종료" />
+	</p>
+</body>
+</html>
