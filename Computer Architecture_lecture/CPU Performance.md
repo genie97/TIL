@@ -83,8 +83,8 @@ CPU Time = CPU Clcok Cycle X Clock Cycle Time
 >
 > 1. **IF**: 명령어를 메모리로부터 **fetch**한다
 > 2. **ID**: 명령어를 **decode**하고, 레지스터를 읽는다
-> 3. **EX**: 작업을 **실행(execution)**하거나 주소를 **계산(calculate)**한다
-> 4. **MEM**: 메모리 operand에 **접근(access)**한다
+> 3. **EX**: 작업을 **execute**하거나 주소를 **calculate**한다
+> 4. **MEM**: 메모리 operand에 **access**한다
 > 5. **WB**: 결과 값을 레지스터에 **write**한다
 
 **파이프라인 속도 향상**
