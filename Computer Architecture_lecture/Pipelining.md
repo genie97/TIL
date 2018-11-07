@@ -35,7 +35,7 @@
 
 **Instruction pipeline**
 
-![(D:\GitHub\TIL\Computer Architecture_lecture\instruction pipeline.JPG)]
+![](.\instruction pipeline.JPG)
 
 - 오른쪽 shading은 read를 의미
 - 왼쪽 shading은 write를 의미
