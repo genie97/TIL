@@ -153,4 +153,30 @@ sw $t5, 16($t0)
 
 ------
 
+Control lines in each stage
+
+1. IF : No control 
+
+2. ID: No control
+
+3. EX: 
+
+   - Result Register(RegDst) 
+
+   - ALU Operation (ALUOp)
+   - Read data 2 or sign-extended immediate for ALU(ALUSrc)
+
+4. MEM:
+
+   - Branch: beq
+   - MemRead: lw
+   - MemWrite: sw
+
+5. WB
+
+   - MemtoReg: ALU result or memory value
+   - RegWrite: R-type, lw
+
+------
+
 > 파이프라인은 **instruction 처리량을 증가시킴**으로써, **성능을 개선**할 수 있다
