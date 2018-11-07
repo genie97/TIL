@@ -27,7 +27,9 @@
 - Load/Store은 data 접근이 필요함
 - 구조적인 문제가 생겨서 다음 단계로 넘어가지 못하고, 그 단계에 머물러 있게 되는 문제가 발행하는데 이를 **버블(Bubble)**이라고 한다.
 
-> **그래서, 파이프라인 datapath에서는 instruction과 datad의 메로리 혹은 캐시를 분리해야 한다.**
+> **그래서, 파이프라인 datapath에서는 instruction과 datad의 메로리 혹은 캐시를 분리해야 한다**
+>
+> **pipeline register를 사용한다**
 
 ------
 
