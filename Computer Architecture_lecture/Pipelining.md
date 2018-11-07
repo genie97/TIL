@@ -153,7 +153,7 @@ sw $t5, 16($t0)
 
 ------
 
-Control lines in each stage
+**Control lines in each stage**
 
 1. IF : No control 
 
