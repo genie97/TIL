@@ -147,9 +147,9 @@ sw $t5, 16($t0)
 
 2. 동적 분기 예측 (dynamic branch prediction)
 
-​        실행 history를 보고 가능성 있는 branch 행동을 정한다 
+   실행 history를 보고 가능성 있는 branch 행동을 정한다 
 
-​        만약, 예측이 틀렸다면 re-fetching을 하는 동안 stall이 발생하고 history를 업데이트 한다
+   만약, 예측이 틀렸다면 re-fetching을 하는 동안 stall이 발생하고 history를 업데이트 한다
 
 ------
 
