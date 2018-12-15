@@ -83,9 +83,7 @@ EX) add $1, $2, $1
 
    - Pipeline can flush the instruction: 파이프라인은 명령어를 없앨 수 있다.
 
-   - Handler executes, then returns to the instruction: 핸들러를 실행한 
-
-     다음 명령어로 돌아간다
+   - Handler executes, then returns to the instruction: 핸들러를 실행한 다음 명령어로 돌아간다
 
 2. PC saved in EPC register
 
@@ -163,7 +161,7 @@ To increase ILP
 
       맞다면: operation이 완료된다.
 
-      틀림다면: roll-back하고, 올바른 operation을 진행한다
+      틀리다면: roll-back하고, 올바른 operation을 진행한다
 
    > compiler는 명령어의 reorder이 가능하다
    >
