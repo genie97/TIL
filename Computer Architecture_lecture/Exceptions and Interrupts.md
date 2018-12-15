@@ -65,7 +65,7 @@ EX) add $1, $2, $1
 
 ------
 
-![](D:\GitHub\TIL\Computer Architecture_lecture\img\handling.JPG)
+![](./img/handling.JPG)
 
 > 중요한 변화는 멀티플렉서에 8000 0180(hex) 값을 갖는 새 입력을 추가하여 새로운 PC값을 제공한다
 >
