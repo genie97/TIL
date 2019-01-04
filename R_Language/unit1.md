@@ -51,7 +51,7 @@
    [39]  76  78  80  82  84  86  88  90  92  94  96  98 100
    ```
 
-4.  Data Frame
+4. Data Frame
 
    > - Two-dimensional array-like structure
    > - Each column(variables) contains values of one variable
@@ -59,34 +59,31 @@
    > - variable_name = data.frame([column header], ...)
 
    ```R
-   Country = c("USA", "kOREA")
-   LifeExpectancy = c(79, 75)
-   CountryData = data.frame(Country, LifeExpextancy)
+      Country = c("USA", "kOREA")
+      LifeExpectancy = c(79, 75)
+      CountryData = data.frame(Country, LifeExpextancy)
    ```
 
-5.  Binding column and row
+5. Binding column and row
 
-   > To only show values of one column
-   >
-   > [data_variable_name]$[column_name]
-   >
-   > Row binding
-   >
-   > [new_data_variable_name] =  rbind([data_name], [data_name])
+   > - To only show values of one column
+   > - [data_variable_name]$[column_name]
+   > - Row binding
+   > - [new_data_variable_name] =  rbind([data_name], [data_name])
 
    ```R
    #Binding Column
-   Country = c("USA", "kOREA")
-   LifeExpectancy = c(79, 75)
-   CountryData = data.frame(Country, LifeExpextancy)
-   CountryData$Population = c(1990000,1300000)
-   
-   #Binding Row
-   Country = c("Australia", "Greece")
-   LifeExpectancy = c(82, 81)
-   Population = c(230505, 11125)
-   NewCountryData = data.frame(Country, LifeExpectancy, Population)
-   AllCountryData  = rbind(CountryData, NewCountryData)
+      Country = c("USA", "kOREA")
+      LifeExpectancy = c(79, 75)
+      CountryData = data.frame(Country, LifeExpextancy)
+      CountryData$Population = c(1990000,1300000)
+      
+      #Binding Row
+      Country = c("Australia", "Greece")
+      LifeExpectancy = c(82, 81)
+      Population = c(230505, 11125)
+      NewCountryData = data.frame(Country, LifeExpectancy, Population)
+      AllCountryData  = rbind(CountryData, NewCountryData)
    ```
 
 6. Check and Set workspace
