@@ -90,7 +90,8 @@ tapply(WHO$LiteracyRate, WHO$Region, min, na.rm=TRUE)
 model1 = lm(Price~AGST, data = wine)
 summary(model1)
 # SSE: 오류^2에 대한 합
-# SST: 각 데이터들을 적절히 대표한다고 볼 수 있는 값
+# SST: (Y-Y의 평균)에 대한 합 
+# 각 데이터들을 적절히 대표한다고 볼 수 있는 값
 # SST = SSE + SSR
 SSE = sum(model1$residuals^2)
 SSE
