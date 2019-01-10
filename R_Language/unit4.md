@@ -88,6 +88,13 @@ tapply(predictTrain, qualityTrain$PoorCare, mean)
 # Second argument = what we want to label the columns 
 table(qualityTrain$PoorCare, predictTrain > 0.5)
 
+# TP: True Positive
+# TN: True Negative
+# FP: False Positive
+# FN: False Negative
+# Sensitivity (TPR) = TP/P = TP / TP + FN
+# Specificity (TNR) = TN/N = TN / TN + FP
+
 # Sensitivity and specificity
 10/(15 + 10)
 70/(70 + 4)
