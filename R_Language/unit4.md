@@ -75,7 +75,7 @@ summary(predictTrain)
 # A model with a higher threshold will have a lower sensitivity and a higher specificity
 # A model with a lower threshold will have a higher sensitivity and a lower specificity
 
-# If we're predicting higher probabilities for the actual poor care
+# If we're predicting higher probabilities for the actual poor care cases as we expect 
 # average predition for each of the true outcome
 tapply(predictTrain, qualityTrain$PoorCare, mean)
 
@@ -84,8 +84,8 @@ tapply(predictTrain, qualityTrain$PoorCare, mean)
 # all of the true good care cases, we predict an average probabilities of about 0.19
 
 # Confusion matrix for threshold of 0.5
-# First argument = what we want to label the rows 
-# Second argument = what we want to label the columns 
+# First argument = what we want to label the rows by, should be the true outcome, which is qualityTrain$PoorCare
+# Second argument = what we want to label the columns by, will be predictTrain, or our predictions, greater than 0.5. 
 table(qualityTrain$PoorCare, predictTrain > 0.5)
 
 # TP: True Positive
