@@ -122,6 +122,8 @@ tabLe(Test$Reverse, predictCART)
 
 # 결과 값
 # Accuracy CART = (41 + 71) / (41 + 26 + 22 + 71) = 0.65
+# Accuracy Logistic Reg = 0.665
+# Accuracy Baseline model = 0.547
 
 # ROC curve
 library(ROCR)
