@@ -13,7 +13,7 @@ SteventsForest = randomForest(Reverse~Circuit + Issue
                              nodesize=25)
 
 # warning in CART, we added the argument method="class",
-# so that it was clear that we're doing a classification probability
+# so that it was clear that we're doing a classification problem
 # The randomForest function does not have a method argument
 # So when we want to do a classiication problem,
 # we need to make sure outcome is a factor
@@ -56,13 +56,13 @@ cpGrid = expand.grid( .cp = seq(0.01,0.5,0.01))
 # method = "rpart -> cross validate a CART model
 train(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, method = "rpart", trControl = numFolds, tuneGrid = cpGrid )
 
-# get a table describing the cross validation accuracy
+# get a table describing the cross validation accuracy for differenct cp prameters
 # First Column -> CP paramter that was tested
-# Second Column gives the cross validation accuracy
-# The accuracy starts lower, and then increases
+# Second Column gives the cross validation accuracy for that cp value
+# The accuracy starts lower, and then increases, and then will start decreasing again
+# Towards the end of the table it shows which CP value to use
 
-
-# Create a new CART model
+# Create a new CART model with the CP value suggested by above model
 # method = 'class' -> building classification tree
 StevensTreeCV = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, method="class", cp = 0.18)
 
@@ -79,8 +79,8 @@ table(Test$Reverse, PredictCV)
 #Accuracy of previous cart model = 0.659
 (59+64) / (59+18+29+64)
 
+# By using Cross Validation we are selecting a SMART parameter values
 
-# By using Cross Validation we are selecting a 
 PredictROC = predict(StevensTreeCV, newdata = Test)
 PredictROC
 
