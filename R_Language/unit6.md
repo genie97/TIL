@@ -6,11 +6,7 @@ install.packages("randomForest")
 library(randomForest)
 
 # Build random forest model
-SteventsForest = randomForest(Reverse~Circuit + Issue
-                             + Petitioner + Respondent 
-                             + LowerCourt + Unconst, 
-                             data = Train, ntree=200,
-                             nodesize=25)
+SteventsForest = randomForest(Reverse~Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, ntree=200, nodesize=25)
 
 # warning in CART, we added the argument method="class",
 # so that it was clear that we're doing a classification problem
@@ -23,11 +19,7 @@ Train$Reverse = as.factor(Train$Reverse)
 Test$Reverse = as.factor(Test$Reverse)
 
 # Try agin
-SteventsForest = randomForest(Reverse~Circuit + Issue
-                             + Petitioner + Respondent 
-                             + LowerCourt + Unconst, 
-                             data = Train, ntree=200,
-                             nodesize=25)
+SteventsForest = randomForest(Reverse~Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, ntree=200, nodesize=25)
 
 # Make predictions
 PredictForest = predict(SteventsForest, newdata = Test)
