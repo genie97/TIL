@@ -6,7 +6,7 @@
 			style="width: 800px; margin-left: auto; margin-right: auto;">
 			<div class="form-group floating-label-form-group controls">
 				<label>[[id]]</label> <input type="text" class="form-control"
-					placeholder="ID" id="id" required
+					placeholder="Email" id="email" required
 					data-validation-required-message="Please enter your ID.">
 				<p class="help-block text-danger"></p>
 			</div>
@@ -15,7 +15,7 @@
 			style="width: 800px; margin-left: auto; margin-right: auto;">
 			<div class="form-group floating-label-form-group controls">
 				<label>[[password]]</label><input type="password" class="form-control"
-					placeholder="Password" id="pw" required
+					placeholder="Password" id="password" required
 					data-validation-required-message="Please enter your Password.">
 				<p class="help-block text-danger"></p>
 			</div>
@@ -31,7 +31,7 @@
         delimiters: ['[[', ']]'],
         el: '#app',
         data: {
-            id: 'ID',
+            id: 'EMAIL',
             password: 'PASSWORD'
 
         }
@@ -45,5 +45,4 @@
 
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
 {% endblock %}
