@@ -65,7 +65,7 @@ corpus[[1]]$content
 # Look at stop words
 stopwords("english")[1:100
 
-                     # Remove stopwords and apple
+# Remove stopwords and apple
 # tm_map function with one extra argument
 # i.e. what the stop words are that we want to remove
 # Remove all the english stop words + Apple
