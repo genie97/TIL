@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'webpack_loader',
     'main',
 ]
+LOGIN_URL = '/main/login/'  # 기본값
+LOGOUT_URL = '/main/logout/'    # 기본값
+LOGIN_REDIRECT_URL = '/'    # 반드시 정의할 것!
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -56,7 +58,7 @@ ROOT_URLCONF = 'marketingSite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,14 +124,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# # Webpack loader
-# WEBPACK_LOADER ={
-#     'DEFAULT': {
-#         'CACHE': not DEBUG,
-#         'BUNDLE_DIR_NAME': '',
-#         'STATS_FILE': os.path.join(BASE_DIR, 'fronted/webpack-stats.json'),
-#         'POLL_INTERVA': 0.1,
-#         'TIMEOUT': None,
-#         'IGNORE': ['.+\.hot-update.js', '.+\.map']
-#     }
-#}
+AUTH_USER_MODEL = 'account.User'
+AUTHENTICATION_BACKENDS = ('account.backends.OpencartBackend',)
+
+# gmail 사용 이메일 인증
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'username@gmail.com'
+EMAIL_HOST_PASSWORD = '앱 비밀번호'
+EMAIL_USE_TLS = True
