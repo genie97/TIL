@@ -1,4 +1,4 @@
-## Django 프로젝트 생성하기
+## Django 시작하기
 
 1. 가상환경 만들기 (Anaconda 이용)
 
