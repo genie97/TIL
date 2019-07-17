@@ -1,7 +1,0 @@
-{% load i18n %}{% autoescape off %}
-{% blocktrans %}
-Please click on the link to confirm your registration,
-{% endblocktrans %}
-
-http://{{ domain }}{% url 'account:activate' uidb64=uid token=token %}
-{% endautoescape %}
