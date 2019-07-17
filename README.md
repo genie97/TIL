@@ -1,4 +1,5 @@
 ## Today I Learned
+------
 
 오늘 공부하고 배운 내용을 이 repository에 업로드 합니다.
 
