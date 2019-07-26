@@ -1,4 +1,4 @@
-0. TOC (순서없는 목록) - 숫자로 시작 {:toc}
+{:toc}
 
 # Today I Learned
 
