@@ -1,5 +1,12 @@
 [TOC]
 
+- [Computer Architecture](<https://github.com/genie97/TIL/blob/master/README.md#computer-architecture>)
+- [Natural_Language Processing](https://github.com/genie97/TIL/blob/master/README.md#natural_language-processing)
+- [R_Language](https://github.com/genie97/TIL/blob/master/README.md#r_language)
+- [Web](https://github.com/genie97/TIL/blob/master/README.md#web)
+
+
+
 # Today I Learned
 
 오늘 공부하고 배운 내용을 이 repository에 업로드 합니다.
