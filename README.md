@@ -1,10 +1,4 @@
-[TOC]
-# Today I Learned
-## Computer Architecture
-## Natural_Language Processing
-## R_Language
-## Web
-
+0. TOC (순서없는 목록) - 숫자로 시작 {:toc}
 
 # Today I Learned
 
