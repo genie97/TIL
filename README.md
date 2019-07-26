@@ -1,9 +1,4 @@
 [TOC]
-- Computer Architecture
-- Natural_Language Processing
-- R_Language
-- Web
-
 - [Computer Architecture](<https://github.com/genie97/TIL/blob/master/README.md#computer-architecture>)
 - [Natural_Language Processing](https://github.com/genie97/TIL/blob/master/README.md#natural_language-processing)
 - [R_Language](https://github.com/genie97/TIL/blob/master/README.md#r_language)
