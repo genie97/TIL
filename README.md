@@ -1,4 +1,10 @@
 [TOC]
+# Today I Learned
+## Computer Architecture
+## Natural_Language Processing
+## R_Language
+## Web
+
 
 # Today I Learned
 
