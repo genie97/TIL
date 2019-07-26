@@ -1,4 +1,4 @@
-{:toc}
+[TOC]
 
 # Today I Learned
 
