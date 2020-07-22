@@ -24,7 +24,7 @@
 
 - Contents
   1. [Colab pyTorch Tutorial]([https://github.com/genie97/TIL/blob/master/Natural%20Language%20Processing/Colab%20pyTorch%20Tutorial.md](https://github.com/genie97/TIL/blob/master/Natural Language Processing/Colab pyTorch Tutorial.md))
-  2. [Natural Language Processing Tutorials]([https://github.com/genie97/TIL/blob/master/Natural%20Language%20Processing/Natural%20Language%20Processing%20tutorials.md](https://github.com/genie97/TIL/blob/master/Natural Language Processing/Natural Language Processing tutorials.md))
+  2. [Natural Language Processing Tutorials](https://github.com/genie97/TIL/blob/master/Natural%20Language%20Processing/Colab%20pyTorch%20Tutorial.md)
 
 <hr>
 
