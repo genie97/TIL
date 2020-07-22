@@ -28,7 +28,7 @@
 
 <hr>
 
-### R_Language :black_nib:
+### R Language :black_nib:
 
 `Description` Data Science Lecture in People Space
 
