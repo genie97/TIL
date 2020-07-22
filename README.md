@@ -11,7 +11,7 @@
 
 ------
 
-### Computer Architecture:computer:
+### Computer Architecture​ ​L​e​c​t​u​r​e:computer:
 
 - Contents
   1. [CPU Performance](https://github.com/genie97/TIL/blob/master/Computer%20Architecture_lecture/CPU%20Performance.md)
