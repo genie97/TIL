@@ -14,19 +14,19 @@
 ### Computer Architecture​ ​L​e​c​t​u​r​e:computer:
 
 - Contents
-  1. [CPU Performance](https://github.com/genie97/TIL/blob/master/Computer%20Architecture_lecture/CPU%20Performance.md)
-  2. [Exceptions and Interrupts](https://github.com/genie97/TIL/blob/master/Computer%20Architecture_lecture/Exceptions%20and%20Interrupts.md)
-  3. [Pipelining](https://github.com/genie97/TIL/blob/master/Computer%20Architecture_lecture/Pipelining.md)
+  1. CPU Performance
+  2. Exception and Interrupts
+  3. Pipelining
 
 <hr>
 
-### Machine Learning :bulb:
+### AI :bulb:
 
 - Contents
-  1. [Colab pyTorch Tutorial](https://github.com/genie97/TIL/blob/master/Natural%20Language%20Processing/Colab%20pyTorch%20Tutorial.md)
-  2. [Natural Language Processing Tutorials](https://github.com/genie97/TIL/blob/master/Natural%20Language%20Processing/Colab%20pyTorch%20Tutorial.md)
+  1. Machine Learning
 
 <hr>
+
 
 ### R Language :black_nib:
 
@@ -49,12 +49,8 @@
 ### Web :earth_asia:
 
 - Directory
-  1. [Basic Concepts](https://github.com/genie97/TIL/tree/master/Web/%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8%20%EC%9B%B9%20%EA%B0%9C%EB%85%90)
+  1. [Basic Concepts]([https://github.com/genie97/TIL/tree/master/Web/Basic%20Concept](https://github.com/genie97/TIL/tree/master/Web/Basic Concept))
   2. [Bootstrap](<https://github.com/genie97/TIL/tree/master/Web/Bootstrap>)
   3. [Django](https://github.com/genie97/TIL/tree/master/Web/Django)
   4. [React Native](<https://github.com/genie97/TIL/tree/master/Web/React%20Native>)
-  5. Vue.js
-  6. Spring
-
-<hr>
-
+  5. [Spring](https://github.com/genie97/TIL/tree/master/Web/Spring)
