@@ -1,4 +1,4 @@
-## Computer Architecture_lecture
+## Computer Architecture Lecture
 
 컴퓨터구조 강의시간에 배운 내용을 이 repository에 업로드합니다.
 
