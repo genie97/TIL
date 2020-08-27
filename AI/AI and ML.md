@@ -1,8 +1,6 @@
-## AI 이론 학습 DAY01
-### : AI/ML
+### AI / ML
+
 <hr>
-
-
 #### 1. AI, ML, and Related Areas
 
 - Big Data와 Machine Learning
