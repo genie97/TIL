@@ -1,4 +1,4 @@
-## Naive Bayes
+### Naive Bayes
 
 <hr>
 
