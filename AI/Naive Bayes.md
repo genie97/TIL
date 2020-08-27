@@ -1,6 +1,7 @@
 ### Naive Bayes
 
 <hr>
+
 #### 1. Naive Bayes Classifier
 
 
