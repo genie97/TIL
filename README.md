@@ -49,7 +49,7 @@
 ### Web :earth_asia:
 
 - Directory
-  1. [Basic Concepts] (https://github.com/genie97/TIL/tree/master/Web/Basic Concept)
+  1. [Basic Concepts] (https://github.com/genie97/TIL/tree/master/Web/Basic%20Concept)
   2. [Bootstrap](<https://github.com/genie97/TIL/tree/master/Web/Bootstrap>)
   3. [Django](https://github.com/genie97/TIL/tree/master/Web/Django)
   4. [React Native](<https://github.com/genie97/TIL/tree/master/Web/React%20Native>)
