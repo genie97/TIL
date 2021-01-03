@@ -175,3 +175,99 @@ When ordered alphabetically, the **CITY** names are listed as **ABC, DEF, PQRS,*
 
 **Note**
 You can write two separate queries to get the desired output. It need not be a single query.
+
+```mysql
+SELECT CITY, LENGTH(CITY)
+FROM STATION
+ORDER BY LENGTH(CITY), CITY
+LIMIT 1;
+
+SELECT CITY, LENGTH(CITY)
+FROM STATION
+ORDER BY LENGTH(CITY) DESC, CITY
+LIMIT 1;
+```
+
+
+
+#### Weather Observation Station 6
+
+Query the list of *CITY* names starting with vowels (i.e., `a`, `e`, `i`, `o`, or `u`) from **STATION**. Your result *cannot* contain duplicates.
+
+**Input Format**
+
+The **STATION** table is described as follows:
+
+![Station.jpg](https://s3.amazonaws.com/hr-challenge-images/9336/1449345840-5f0a551030-Station.jpg)
+
+where *LAT_N* is the northern latitude and *LONG_W* is the western longitude.
+
+```mysql
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY LIKE "a%" 
+OR CITY LIKE "e%"
+OR CITY LIKE "i%"
+OR CITY LIKE "o%"
+OR CITY LIKE "u%"
+```
+
+
+
+#### Weather Observation Station 7
+
+Query the list of *CITY* names ending with vowels (a, e, i, o, u) from **STATION**. Your result *cannot* contain duplicates.
+
+**Input Format**
+
+The **STATION** table is described as follows:
+
+![Station.jpg](https://s3.amazonaws.com/hr-challenge-images/9336/1449345840-5f0a551030-Station.jpg)
+
+where *LAT_N* is the northern latitude and *LONG_W* is the western longitude.
+
+```mysql
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY LIKE "%a" 
+OR CITY LIKE "%e"
+OR CITY LIKE "%i"
+OR CITY LIKE "%o"
+OR CITY LIKE "%u"
+```
+
+
+
+#### Weather Observation Station 8
+
+Query the list of *CITY* names from **STATION** which have vowels (i.e., *a*, *e*, *i*, *o*, and *u*) as both their first *and* last characters. Your result cannot contain duplicates.
+
+**Input Format**
+
+The **STATION** table is described as follows:
+
+![Station.jpg](https://s3.amazonaws.com/hr-challenge-images/9336/1449345840-5f0a551030-Station.jpg)
+
+where *LAT_N* is the northern latitude and *LONG_W* is the western longitude.
+
+```mysql
+SELECT DISTINCT CITY
+FROM STATION
+WHERE (CITY LIKE "%a" 
+OR CITY LIKE "%e"
+OR CITY LIKE "%i"
+OR CITY LIKE "%o"
+OR CITY LIKE "%u")
+AND (CITY LIKE "a%" 
+OR CITY LIKE "e%"
+OR CITY LIKE "i%"
+OR CITY LIKE "o%"
+OR CITY LIKE "u%")
+
+# 정규식 사용하기
+# REGEXP()
+# ^A = LIKE A%
+# A$ = LIKE %A
+# A | B = A OR B
+```
+
